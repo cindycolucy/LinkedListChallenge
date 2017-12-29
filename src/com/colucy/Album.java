@@ -32,13 +32,13 @@ public class Album {
         return null;
     }
 
-    public boolean addToPlaylist(int trackNumer, LinkedList<Song> playlist){
-        int index = trackNumer -1;
+    public boolean addToPlaylist(int trackNumber, LinkedList<Song> playlist){
+        int index = trackNumber -1;
         if((index > 0) && (index <= this.songs.size())){
             playlist.add(this.songs.get(index));
             return true;
         }
-        System.out.println("This album does not have track " + trackNumer);
+        System.out.println("This album does not have track " + trackNumber);
         return false;
     }
 
